@@ -1,0 +1,100 @@
+.container{
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+.aboutUs{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 10;
+}
+
+.aboutUs img{
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.aboutUs2{
+    width: 50%;
+    text-align: center;
+}
+
+.aboutUs2 h3{
+    font-size: 55px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.aboutUs2 p{
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.greenDiv{
+    height:30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left bottom, #ffea80, #ff6600);
+
+
+}
+
+.greenDiv h4{
+    width: 50%;
+    color: #000;
+    font-size: 27px; 
+    text-transform: uppercase;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.greenDiv img{
+    height: 100%;
+    object-fit: cover;
+    width: 20%;
+}
+/* quote */
+.quote{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.quote>p{
+    font-size: 30px;
+    font-weight: 800;
+    width: 45%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.quote img{
+   height: 60px;
+   
+   position: absolute;
+    
+}
+
+.quote .colon1{
+    
+    left: 20%;
+    top: 20%;
+}
+
+.quote .colon2{
+    right:22%;
+    bottom: 30%;
+}

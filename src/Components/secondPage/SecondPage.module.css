@@ -1,0 +1,151 @@
+.page2{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+    background-color: black;
+
+}
+
+.scroller{
+
+    white-space: nowrap;
+    overflow-x:auto ;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+
+
+
+}
+
+.scroller::-webkit-scrollbar{
+    display: none;
+}
+.scroller1{
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin-top: 80px;
+}
+
+
+
+.scroller h4{
+    display: inline-block;
+    font-size: 120px;
+    font-weight: 900;
+    font-family:'gilroy';
+    margin-right: 10px;
+    transition: all linear 0.5s;
+    color:#FFBF00;
+    -webkit-text-stroke: 2px .95C11E;
+}
+
+.scroller h4:hover{
+    color: .95C11E;
+}
+/* style  for  events h1 */
+.events {
+  font-size: 2.5rem; /* Large, bold text */
+  color: #fff; /* White text */
+  text-align: center; /* Center align the text */
+  padding: 20px;
+  background: linear-gradient(45deg, #ff8c00, #ff6f00); /* Gradient with shades of orange */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-transform: uppercase; /* Make text uppercase for emphasis */
+  letter-spacing: 2px; /* Add some letter spacing for a modern look */
+  position: relative;
+  overflow: hidden;
+}
+
+.events::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.events::after {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  z-index: 1;
+  animation: slide 6s infinite;
+}
+
+@keyframes slide {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.events span {
+  position: relative;
+  z-index: 2;
+}
+
+.pastEvents{
+    text-align: center;
+    color: white;
+    font-size: 2.3rem;
+    padding: 15px 0;
+}
+.upcommingEvents{
+    text-align: center;
+    color: white;
+    font-size: 2.3rem;
+    padding: 15px 0;
+}
+.past{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    flex-wrap:wrap;
+}
+.upcomming{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    flex-wrap:wrap;
+}
+
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+@keyframes scroll1 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(100%);
+    }
+    
+}
